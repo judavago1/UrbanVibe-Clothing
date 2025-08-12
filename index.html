@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanVibe Clothing</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <h1>UrbanVibe Clothing</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+        
+        <!-- Sección Productos -->
+        <section id="productos" class="section active">
+            <h2>Productos</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/producto1.jpg" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>$240.000</p>
+                    <button>Ver más</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/producto2.jpg" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p>$150.000</p>
+                    <button>Ver más</button>
+                </div>
+            </div>
+        </section>
+
+                <!-- Modal Detalle Producto -->
+        <div id="modal-producto" class="modal">
+            <div class="modal-content">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <img id="modal-img" src="" alt="Producto" />
+                <h3 id="modal-titulo"></h3>
+                <p id="modal-precio"></p>
+                <p id="modal-descripcion"></p>
+            </div>
+        </div>
+
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo" required>
+                <textarea placeholder="Mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Sección Registro -->
+        <section id="registro" class="section">
+            <h2>Registro</h2>
+            <form>
+                <input type="text" placeholder="Nombre de usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
+        <!-- Sección Acerca de -->
+        <section id="acerca" class="section">
+            <div class="acercad">
+                <h2>Acerca de UrbanVibe Clothing</h2>
+                <p>Acerca de nosotros
+                    En UrbanVibe Clothing creemos que la moda es más que solo ropa: es una forma de expresar quién eres. Nos especializamos en ofrecer prendas únicas, cómodas y de alta calidad, diseñadas para acompañarte en cada momento de tu vida.
+                    Nuestra misión es combinar estilo, tendencias y precios accesibles, brindándote una experiencia de compra personal e inspiradora. Cada colección es cuidadosamente seleccionada para que encuentres piezas que no solo te vistan, sino que también te inspiren.
+                    
+                    Ven a conocernos y descubre por qué verse increíble nunca fue tan fácil.</p>
+            </div>
+
+            <!-- Tarjeta de contacto -->
+            <div class="tarjeta_contacto">
+                <h2>Contacto</h2>
+                <p><strong>Nombre de la empresa:</strong> Elegant Wear</p>
+                <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+                <p><strong>Email:</strong> contacto@elegantwear.com</p>
+                <p><strong>Dirección:</strong> Calle 45 #12-34, Bogotá, Colombia</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Menú inferior -->
+    <nav class="bottom-nav">
+        <button onclick="showSection('productos')">🛒 Productos</button>
+        <button onclick="showSection('contacto')">📞 Contacto</button>
+        <button onclick="showSection('registro')">📝 Registro</button>
+        <button onclick="showSection('acerca')">ℹ️ Acerca</button>
+    </nav>
+
+    <script src="index.js"></script>
+
+    <footer class="footer">
+        <p>&copy; 2025 Mi E-commerce | Todos los derechos reservados</p>
+        <p><a href="#acerca">Acerca de</a> | <a href="#contacto">Contacto</a></p>
+    </footer>
+    
+</body>
+</html>
