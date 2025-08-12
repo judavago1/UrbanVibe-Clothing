@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: #ff6600;
+    background: #007acc;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -107,7 +107,7 @@ button:hover {
 }
 
 .bottom-nav button:hover {
-    background: #ff6600;
+    background: #115988;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -167,7 +167,7 @@ button:hover {
 
 .cerrar:hover {
     transform: scale(3); /* Lo agranda sin moverlo */
-    color: #e65c00;
+    color: #007acc;
 }
 
 
@@ -231,7 +231,7 @@ button:hover {
 
 /* FOOTER */
 .footer {
-    background-color: rgb(255, 111, 1);
+    background-color: #007acc;
     color: white;
     text-align: center;
     padding: 15px 10px;
